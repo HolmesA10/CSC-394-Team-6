@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>My Todos</title>
+		<meta name="viewpoint content=" width="device-width, initial-scale=1">
+		<link type="text/css" rel="stylesheet" href="./taskblaster.css"/>
+	</head>
+	<body>
+		<header class="navbar board">Andy Holmes</header>
+		<div class="columns">
+			<div id="tasks_todo">
+				<h1 class="label">Todo</h1>
+				<div class="card create-task">
+					<p>Create a task</p>
+					<div>
+						<input id="create_task_input" type="text"/>
+					</div>
+					<div class="task-interaction">
+						<button onclick="createCard(document.getElementById('create_task_input').value)">Create Task</button>
+				</div>
+			</div>
+		</div>
+		<div id="tasks_inprogress">
+			<h1>In Progress</h1>
+		</div>
+		<div id="tasks_completed">
+			<h1>Complete</h1>
+		</div>
+	</div>
+	<script src="taskblaster.js"></script>
+	</body>
+</html>
